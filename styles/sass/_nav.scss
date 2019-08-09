@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 20rem;
+        justify-content: space-between;
+        padding: 1rem 0;
+        list-style-type: none;
+        li {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            a {
+                color: $white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: $header-font;
+            }
+        }
+    }
+}    
+
+
+
