@@ -1,0 +1,22 @@
+@import "body";
+@import "typography";
+
+.find-button {
+    background: $light-blue;
+    padding: .7rem 1.5rem;
+    color: $dark-blue;
+    border: none;
+    text-transform: uppercase;
+    font-family: $header-font;
+    font-size: 1rem;
+}
+
+.read-button {
+    background: $dark-blue;
+    padding: .7rem 1.5rem;
+    color: $white;
+    border: none;
+    text-transform: uppercase;
+    font-family: $header-font;
+    font-size: 1rem;
+}
