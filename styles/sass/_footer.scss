@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    background-color: $light-blue;
+    padding: .5rem;
+    p {
+        display: flex;
+        justify-content: center;
+        color: $dark-blue;
+        font-family: $body-font;
+        font-size: .8rem;
+        margin: 0;
+    }
+}

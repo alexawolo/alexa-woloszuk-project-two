@@ -36,9 +36,9 @@
 
 .home-header-img {
     position: absolute;
-    width: 700px;
-    top: 175px;
-    left: 580px;
+    width: 650px;
+    top: 165px;
+    left: 630px;
 }
 
 .home-h1 { 
@@ -67,6 +67,7 @@
         text-transform: uppercase;
         justify-content: center;
         font-size: 2rem;
+        padding-bottom: 1.5rem;
     }
     .home-main-p {
         display: flex;
@@ -80,6 +81,11 @@
 .home-main-button {
     display: flex;
     justify-content: center;
+    padding-top: 1.5rem;
+}
+
+.new-additions-img {
+    max-width: auto;
 }
 
 .new-additions-container {
@@ -87,29 +93,35 @@
     display: flex;
     img {
         display: flex;
-        box-shadow: 20px 20px 0 4px $light-blue;
-        width:
+        box-shadow: 30px 30px 0 4px $light-blue;
     }
     .additions-content {
         display: flex;
         flex-direction: column;
-        padding: 2rem 5rem 5rem;
+        padding: 3rem 5rem 5rem 10rem;
         width: 700px;
         color: $white;
         h3 {
             text-transform: uppercase;
             font-family: $header-font;
             letter-spacing: .1rem;
+            padding-bottom: 1.5rem
         }
         p {
-            font-size: 1rem;
+            font-family: $body-font;
+            font-size: .8rem;
             margin: 0;
+            line-height: 1.2rem;
         }
         button {
             max-width: 170px;
             margin-top: 2rem;
         }
     }
+}
+
+.nemo-img {
+    max-width: auto;
 }
 
 .nemo-container {
@@ -118,36 +130,141 @@
     flex-direction: row-reverse;
     img {
         display: flex;
-        box-shadow: -20px 20px 0 4px $light-blue;
+        box-shadow: -30px 30px 0 4px $light-blue;
     }
     .nemo-content {
         display: flex;
         flex-direction: column;
-        padding: 5rem 5rem 2rem;
+        padding: 3rem 8rem 2rem;
         width: 700px;
         color: $white;
+        text-align: right;
         h3 {
             text-transform: uppercase;
             font-family: $header-font;
             letter-spacing: .1rem;
+            padding-bottom: 1.5rem;
             
         }
         p {
-            font-size: 1rem;
+            font-family: $body-font;
+            font-size: .8rem;
             margin: 0;
+            line-height: 1.2rem;
         }
         button {
             max-width: 170px;
             margin-top: 2rem;
+            text-align: right;
         }
     }
+}
+
+.nemo-button {
+    display:flex;
+    justify-content: flex-end;
 }
 
 .list-icon {
     background-color: $dark-blue;
     display: flex;
+    .list-icon-content {
+        display: flex;
+        flex-wrap: wrap;
+        color: $white;
+        padding: 3rem 0 1rem;
+        justify-content: center;
+    }
+}
+
+.content-list {
+    width: 500px;
+    list-style: none;
+    padding: 1rem;
+    h3 {
+        font-family: $header-font;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin: 0 0 0 .5rem;
+    }
+    p {
+        font-family: $body-font;
+        font-size: .8rem;
+        margin: 0;
+        padding-left: 3rem;
+        line-height: 1.2rem;
+    }
+}
+
+.list-h2 {
+    display: flex;
+    align-items: center;
+}
+
+.fas {
+    border: 5px solid $light-blue;
+    background-color: $light-blue;
+    border-radius: 50%;
+    color: $dark-blue;
+    padding: .5rem;
+    font-size: 1rem;
 
 }
+
+.profile-container {
+    background-color: $dark-blue;
+    display: flex;
+    color: $white;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    .profile {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .profile-content {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        padding: 5rem 0;
+        h2 {
+            font-family: $header-font;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+            padding: 0 0 1rem;
+        }
+        p {
+            font-family: $body-font;
+            font-size: .8rem;
+            line-height: 1.2rem;
+        }
+        button {
+            max-width: 200px;
+            margin-top: 1rem;
+        }
+    }
+    .square-img {
+        width: 250px;
+        max-width: auto;
+        box-shadow: 30px 30px 0 4px $light-blue;
+        margin: 5rem 5rem 0 0;
+    }
+}
+
+
+
+.gallery {
+    background-color: $green;
+    display: flex;
+    img {
+        padding: 3rem .3rem;
+        width: 320px;
+        max-width: auto;
+    }
+}
+
+@import "footer";
 
 
 
