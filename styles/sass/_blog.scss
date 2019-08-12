@@ -1,4 +1,93 @@
 @import "body";
-@import "typography";
 @import "nav";
+@import "typography";
 @import "buttons";
+
+.blog-header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/blog-header.jpg);
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    h1 {
+        position: absolute;
+        font-family: $header-font;
+        color: $white;
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+}
+
+.main-aside-container {
+    background-color: $dark-blue;
+    color: $white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.blog-main-img {
+    box-shadow: -30px 30px 0 0 $light-blue;
+    margin: -10rem 0 0 1.5rem;
+    z-index: 1;
+}
+
+.blog-main {
+    display: flex;
+    flex-direction: column;
+    .blog-main-content {
+        border-left: 5px solid $light-blue;
+        .content {
+            font-size: .8rem;
+            width: 500px;
+            padding: 1rem .5rem;
+            border-bottom: 5px solid $light-blue;
+        }
+    }
+}
+
+.blog-aside {
+    display: flex;
+    flex-direction: column;
+    .blog-side-img-container {
+        img {
+        z-index: 1;
+        }
+    }
+    .aside-content {
+        background-color: $green;
+        width: 250px;
+        padding-top: 15rem;
+    }
+}
+
+.aside-about{
+    h4 {
+        font-family: $header-font;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    p {
+        font-family: $body-font;
+        font-size: .8rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.recent-posts {
+    h4 {
+        font-family: $header-font;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    ul {
+        list-style-type: disc;
+        font-family: $body-font;
+        font-size: .8rem;
+        margin-left: 1rem;
+    }
+}
