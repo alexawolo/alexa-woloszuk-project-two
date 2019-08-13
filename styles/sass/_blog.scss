@@ -173,75 +173,80 @@ img {
 
 // NOTE: SOME AREAS ARE COMMENTED OUT - THEY ARE OLD ATTEMPTS I SAVED TO TRY OTHER THINGS BEFORE I FOUND THE SOLUTION.
 
-.form-user-info {
-    display: flex;
-    flex-direction: space-between;
-    text-align: center;
-    // flex: 0 0 auto; ATTEMPTED TO CREATE SPACING BETWEEN ELEMENTS.
-    border: none;
-    .name {
-        display: flex;
-        width: 49%;
-        margin-right: -1px;
-        background-color: $dark-blue;
-        color: $white;
-        border: none;
-        border-bottom: 2px solid $light-blue;
-    }
-    .email {
-        display: flex;
-        width: 49%;
-        background-color: $dark-blue;
-        color: $white;
-        border: none;
-        border-bottom: 2px solid $light-blue;
-    }
-}
+@import "form";
 
-.name::placeholder {
-    color: $white;
-    opacity: 1;
-}
+// .form-user-info {
+//     display: flex;
+//     justify-content: space-between;
+//     text-align: center;
+//     // flex: 0 0 auto; ATTEMPTED TO CREATE SPACING BETWEEN ELEMENTS.
+//     border: none;
+//     .name {
+//         display: flex;
+//         width: 49%;
+//         margin-right: -1px;
+//         background-color: $dark-blue;
+//         color: $white;
+//         border: none;
+//         border-bottom: 2px solid $light-blue;
+//     }
+//     .email {
+//         display: flex;
+//         width: 49%;
+//         background-color: $dark-blue;
+//         color: $white;
+//         border: none;
+//         border-bottom: 2px solid $light-blue;
+//     }
+// }
 
-.email::placeholder {
-    color: $white;
-    opacity: 1;
-}
+// .name::placeholder {
+//     color: $white;
+//     opacity: 1;
+// }
 
-.form-function {
-    display: flex;
-    flex-direction: column;
+// .email::placeholder {
+//     color: $white;
+//     opacity: 1;
+// }
 
-    .comment-textbox {
-        display: block;
-        margin-top: 1rem;
-        width: 100%;
-        height: 300px;
-        background-color: $dark-blue;
-        color: $white;
-        border: 2px solid $light-blue;
-    }
-    .post-comment {
-        width: 100%;
-        border: none;
-        margin: 2rem 0;
-        padding: .5rem;
-        background-color: $green;
-        color: $white;
-        text-transform: uppercase;
-        font-family: $header-font;
-        font-size: 1rem;
-        letter-spacing: .1rem;
-    }
-}
+// .form-function {
+//     display: flex;
+//     flex-direction: column;
 
-.comment-textbox::placeholder {
-        color: $white;
-        opacity: 1;
-}
+//     .comment-textbox {
+//         display: block;
+//         margin-top: 1rem;
+//         width: 100%;
+//         height: 300px;
+//         background-color: $dark-blue;
+//         color: $white;
+//         border: 2px solid $light-blue;
+//     }
+//     .post-comment {
+//         width: 100%;
+//         border: none;
+//         margin: 2rem 0;
+//         padding: .5rem;
+//         background-color: $green;
+//         color: $white;
+//         text-transform: uppercase;
+//         font-family: $header-font;
+//         font-size: 1rem;
+//         letter-spacing: .1rem;
+//     }
+// }
 
-.post-comment::placeholder {
-    color: $white;
-    opacity: 1;
+// .comment-textbox::placeholder {
+//         color: $white;
+//         opacity: 1;
+// }
 
-}
+// .post-comment::placeholder {
+//     color: $white;
+//     opacity: 1;
+//     text-transform: uppercase;
+//     font-family: $header-font;
+//     padding: 2rem;
+
+// }

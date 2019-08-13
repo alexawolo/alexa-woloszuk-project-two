@@ -2,3 +2,59 @@
 @import "typography";
 @import "nav";
 @import "buttons";
+
+.contact-header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/contact-header.jpg);
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    h1 {
+        position: absolute;
+        font-family: $header-font;
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: $white;
+        top: 250px;
+        left: 420px;
+    }
+}
+
+@import "form";
+
+.contact-aside {
+    // display: flex;
+    // flex-direction: column;
+    // justify-items: flex-start;
+    background-color: $dark-blue;
+    color: $white;
+    padding: 6rem 0;
+    font-size: 1rem;
+    .contact-aside-content {
+        width: 300px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            li {
+                padding-right: 1rem;
+            }
+        }
+        .contact-email {
+            font-family: $header-font;
+            font-size: 1rem;
+            color: $white;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .contact-info {
+            font-family: $body-font;
+            font-size: .8rem;
+            line-height: 1.1rem;
+            padding-top: 1rem;
+        }
+    }
+
+
+}

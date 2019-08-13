@@ -781,6 +781,7 @@ footer p {
   font-family: "Lato", sans-serif;
   font-size: .8rem;
   margin: 0;
+  padding: .5rem;
 }
 
 html,
@@ -1085,10 +1086,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: space-between;
-          flex-direction: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   border: none;
 }
@@ -1119,41 +1119,57 @@ img {
 .name::-webkit-input-placeholder {
   color: #ffffff;
   opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
 }
 
 .name:-ms-input-placeholder {
   color: #ffffff;
   opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
 }
 
 .name::-ms-input-placeholder {
   color: #ffffff;
   opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
 }
 
 .name::placeholder {
   color: #ffffff;
   opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
 }
 
 .email::-webkit-input-placeholder {
   color: #ffffff;
   opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
 }
 
 .email:-ms-input-placeholder {
   color: #ffffff;
   opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
 }
 
 .email::-ms-input-placeholder {
   color: #ffffff;
   opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
 }
 
 .email::placeholder {
   color: #ffffff;
   opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
 }
 
 .form-function {
@@ -1212,21 +1228,113 @@ img {
 .post-comment::-webkit-input-placeholder {
   color: #ffffff;
   opacity: 1;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  padding: 2rem;
 }
 
 .post-comment:-ms-input-placeholder {
   color: #ffffff;
   opacity: 1;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  padding: 2rem;
 }
 
 .post-comment::-ms-input-placeholder {
   color: #ffffff;
   opacity: 1;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  padding: 2rem;
 }
 
 .post-comment::placeholder {
   color: #ffffff;
   opacity: 1;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  padding: 2rem;
+}
+
+.contact-input {
+  position: absolute;
+  top: 350px;
+  left: 425px;
+  background-color: #0f614e;
+  width: 800px;
+  height: 540px;
+  -webkit-box-shadow: -30px 30px 0 0 #86e0f9;
+          box-shadow: -30px 30px 0 0 #86e0f9;
+}
+
+.contact-user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  border: none;
+  padding: 4rem 2rem 2rem;
+}
+
+.contact-user-info .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 49%;
+  margin-right: -1px;
+  background-color: #0f614e;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #86e0f9;
+}
+
+.contact-user-info .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 49%;
+  background-color: #0f614e;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #86e0f9;
+}
+
+.contact-form-function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.contact-form-function .message-textbox {
+  display: block;
+  margin-top: 1rem;
+  width: auto;
+  height: 300px;
+  background-color: #0f614e;
+  color: #ffffff;
+  border: 2px solid #86e0f9;
+  margin: 0 2rem 1rem;
+}
+
+.contact-form-function .submit-button {
+  border: none;
+  margin: 0 2rem;
+  padding: .5rem;
+  background-color: #0c1423;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  letter-spacing: .1rem;
 }
 
 html,
@@ -1340,6 +1448,325 @@ img {
   text-transform: uppercase;
   font-family: "Barlow", sans-serif;
   font-size: 1rem;
+}
+
+.contact-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url(../images/contact-header.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/contact-header.jpg);
+  background-size: cover;
+  /* or contain depending on what you want */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: relative;
+}
+
+.contact-header h1 {
+  position: absolute;
+  font-family: "Barlow", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  top: 250px;
+  left: 420px;
+}
+
+.form-user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  border: none;
+}
+
+.form-user-info .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 49%;
+  margin-right: -1px;
+  background-color: #0c1423;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #86e0f9;
+}
+
+.form-user-info .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 49%;
+  background-color: #0c1423;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #86e0f9;
+}
+
+.name::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+}
+
+.name:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+}
+
+.name::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+}
+
+.name::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+}
+
+.email::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+}
+
+.email:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+}
+
+.email::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+}
+
+.email::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+}
+
+.form-function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-function .comment-textbox {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  height: 300px;
+  background-color: #0c1423;
+  color: #ffffff;
+  border: 2px solid #86e0f9;
+}
+
+.form-function .post-comment {
+  width: 100%;
+  border: none;
+  margin: 2rem 0;
+  padding: .5rem;
+  background-color: #0f614e;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+}
+
+.comment-textbox::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.comment-textbox:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.comment-textbox::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.comment-textbox::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.post-comment::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  padding: 2rem;
+}
+
+.post-comment:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  padding: 2rem;
+}
+
+.post-comment::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  padding: 2rem;
+}
+
+.post-comment::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  padding: 2rem;
+}
+
+.contact-input {
+  position: absolute;
+  top: 350px;
+  left: 425px;
+  background-color: #0f614e;
+  width: 800px;
+  height: 540px;
+  -webkit-box-shadow: -30px 30px 0 0 #86e0f9;
+          box-shadow: -30px 30px 0 0 #86e0f9;
+}
+
+.contact-user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  border: none;
+  padding: 4rem 2rem 2rem;
+}
+
+.contact-user-info .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 49%;
+  margin-right: -1px;
+  background-color: #0f614e;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #86e0f9;
+}
+
+.contact-user-info .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 49%;
+  background-color: #0f614e;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #86e0f9;
+}
+
+.contact-form-function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.contact-form-function .message-textbox {
+  display: block;
+  margin-top: 1rem;
+  width: auto;
+  height: 300px;
+  background-color: #0f614e;
+  color: #ffffff;
+  border: 2px solid #86e0f9;
+  margin: 0 2rem 1rem;
+}
+
+.contact-form-function .submit-button {
+  border: none;
+  margin: 0 2rem;
+  padding: .5rem;
+  background-color: #0c1423;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+}
+
+.contact-aside {
+  background-color: #0c1423;
+  color: #ffffff;
+  padding: 6rem 0;
+  font-size: 1rem;
+}
+
+.contact-aside .contact-aside-content {
+  width: 300px;
+}
+
+.contact-aside .contact-aside-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contact-aside .contact-aside-content ul li {
+  padding-right: 1rem;
+}
+
+.contact-aside .contact-aside-content .contact-email {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.contact-aside .contact-aside-content .contact-info {
+  font-family: "Lato", sans-serif;
+  font-size: .8rem;
+  line-height: 1.1rem;
+  padding-top: 1rem;
 }
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
