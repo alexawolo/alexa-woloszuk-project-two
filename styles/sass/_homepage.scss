@@ -34,11 +34,19 @@
 
 // }
 
+.home-header-img-container {
+    // display: flex;
+    // max-width: 650px;
+    max-width: 100%;
+    height: auto;
+    
+}
+
 .home-header-img {
     position: absolute;
     width: 650px;
     top: 165px;
-    left: 630px;
+    left: 625px;
 }
 
 .home-h1 { 
@@ -99,8 +107,9 @@
     .additions-content {
         display: flex;
         flex-direction: column;
-        padding: 3rem 5rem 5rem 10rem;
-        width: 700px;
+        padding: 3rem 2rem 5rem 6rem;
+        width: 90%;
+        max-width: 700px;
         color: $white;
         h3 {
             text-transform: uppercase;
@@ -137,8 +146,9 @@
     .nemo-content {
         display: flex;
         flex-direction: column;
-        padding: 3rem 8rem 2rem;
-        width: 700px;
+        padding: 3rem 4rem 2rem;
+        width: 90%;
+        max-width: 700px;
         color: $white;
         text-align: right;
         h3 {
@@ -266,7 +276,8 @@
     .profile-content {
         display: flex;
         flex-direction: column;
-        width: 600px;
+        max-width: 600px;
+        width: 90%;
         padding: 5rem 0;
         h2 {
             font-family: $header-font;
@@ -292,8 +303,6 @@
         margin: 5rem 5rem 0 0;
     }
 }
-
-
 
 .gallery {
     background-color: $green;
@@ -325,8 +334,6 @@
     //     // max-width: auto;
     // }
 // }
-
-// TICKER WITH IMG IN GALLERY SECTION TO SHRINK, AND RESIZE FOR MOBILE.
 
 @import "footer";
 

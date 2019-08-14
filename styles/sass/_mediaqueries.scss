@@ -3,3 +3,157 @@
 @import "typography";
 @import "nav";
 @import "buttons";
+
+@media (max-width: 1276px) {
+    .home-header-img-container {
+        display: none;
+    }
+}
+
+@media (max-width: 1230px) {
+    .new-additions-img {
+        display: none;
+    }
+
+        .nemo-img {
+        display: none;
+    }
+
+    .new-additions-container {
+        justify-content: center;
+        .additions-content {
+            padding: 2rem 2rem 2rem 4rem;
+            h3 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            button {
+                align-self: center;
+            }
+        }
+    }
+
+    .nemo-container {
+        justify-content: center;
+        .nemo-content {
+            padding: 2rem 2rem 2rem 4rem;
+            h3 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .nemo-button {
+        justify-content: center;
+        button {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 950px) {
+    .square-img {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .profile {
+        h2 {
+            font-size: 1rem;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font-size: .8rem;
+        }
+        button {
+            text-align: center;
+            align-self: center;
+            max-width: 200px;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    nav {
+    padding-left: .5rem;
+    padding-right: .5rem;
+        li{
+            font-size: .8rem;
+
+        }
+    }
+
+    .home-h1-container {
+        padding-top: 4rem;
+        padding-right: 2rem;
+    }
+    .home-h1 {
+        position: static;
+        margin: 0 auto;
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    // body {
+    //     font-size: 100%;
+    // } DID NOT REDUCE BODY FONT SIZE...
+    .home-main {
+        .home-main-h2 {
+            font-size: 1.5rem;
+        }
+        .home-main-p {
+            font-size: .8rem;
+            line-height: 1rem;
+            text-align: center;
+        }   
+    }
+
+    .content-list {
+        width: 350px;
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .8rem;
+            line-height: 1rem;
+        }
+    }
+
+    // .profile-content {
+    //     h2 {
+    //         font-size: .8rem;
+    //         text-align: center;
+    //     }
+    //     p {
+    //         text-align: center;
+    //         font-size: .8rem;
+    //     }
+    // } ISN'T APPLYING NEW FONT-SIZE*
+}
+
+@media (max-width: 330px) {
+    .profile {
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: .6rem;
+            line-height: 1rem;
+        }
+    }
+}
